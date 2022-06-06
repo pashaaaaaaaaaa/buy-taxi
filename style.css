@@ -1,0 +1,882 @@
+@import url('https://fonts.googleapis.com/css2?family=Days+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 1920px;
+    height: auto;
+    box-sizing: border-box;
+}
+.header{
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 11px;
+    padding-left: 200px;
+    padding-bottom: 13px;
+    padding-right: 272px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333331;
+    max-width: 1920px;
+    border: none;
+}
+.header__logo{
+    width: 220px;
+    height: 27px;
+    margin-right: 130px;
+}
+.header__navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header__ul li{
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Proxima Nova', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-right: 53px;
+    white-space: nowrap;
+}
+.call{
+    border: none;
+    border-left: 3px solid #FDB106;
+    box-sizing: border-box;
+    padding-left: 16px;
+    margin-left: 61px;
+}
+.call__phone{
+    font-family: 'Proxima Nova', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 0;
+    text-align: left;
+}
+.call__me{
+    font-family: 'Proxima Nova', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: #FDB106;
+    margin: 0;
+    white-space: nowrap;
+}
+/* content page */
+.content{
+    width: 100%;
+    max-width: 1920px;
+    border: none;
+    border-top: 6px solid #FDB106;
+    background-image: url(/img/backround.png);
+    height: 600px;
+    box-sizing: border-box;
+    display: flex;
+    padding-right: 200px;
+    margin-bottom: 100px;
+}
+.content__car{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+}
+.car__text{
+    width: 520px;
+    height: 144px;
+    white-space: wrap;
+    font-family: 'Days One', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: white;
+    font-size: 40px;
+    line-height: 120%;
+    text-transform: uppercase;
+    margin: 0;
+    margin-left: 200px;
+    margin-top: 32px;
+}
+.car__img{
+    width: 859px;
+    height: 483px;
+    left: 166px;
+    top: 100px;
+    position: absolute;
+}
+.content__price{
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+    margin-left: 650px;
+    margin-right: 200px;
+
+}
+.price__title{
+    font-family: 'Days One', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 22px;
+    width: 350px;
+    height: 146px;
+    white-space: wrap;
+}
+.title__price{
+    color: #FDB106;
+}
+.title__text{
+    font-family: 'Proxima Nova', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0;
+    margin-left: 80px;
+    color: white;
+    width: 227px;
+    height: 78px;
+    white-space: wrap;
+}
+.text__day{
+    color: #FDB106;
+    display: block;
+    white-space: nowrap;
+}
+
+/* swiper page */
+.swiper {
+    width: 400px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    width: 100px;
+    height: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 233px;
+    height: 137px;
+    object-fit: cover;
+    margin: 0%;
+}
+
+.swiper-button-next, 
+.swiper-button-prev{
+    border-radius: 50%;
+    border: none;
+    background-color: white;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.swiper-button-next::after{
+    content: '' !important;
+    color: #FDB106;
+    background-image: url(/img/next.svg);
+    width: 4px;
+    height: 12px;
+}
+.swiper-button-prev::after{
+    content: '' !important;
+    background-image: url(/img/prev.svg);
+    color: #FDB106;
+    width: 4px;
+    height: 12px;
+}
+/* timing page */
+.content__timing{
+    display: flex;
+    flex-direction: column;
+}
+.content__wrapper{
+    display: flex;
+    margin-bottom: 6px;
+    justify-content: space-between;
+    align-items: center;
+    width: 232px;
+    height: 47px;
+    margin-left: 80px;
+}
+.point{
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 15px;
+    margin-top: -15px;
+}
+.point div{
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: white;
+    
+}
+.content__time{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#minutes, 
+#hours, 
+#days, 
+#seconds{
+    font-family: 'Days One', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.small{
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.content__strong{
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    color: #FDB106;
+    margin-left: 10px;
+    margin-bottom: 30px;
+} 
+.content__btn-mobile{
+    display: none;
+}
+.content__btn{
+    cursor: pointer;
+    margin-left: 80px;
+    width: 242px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: linear-gradient(90deg, #FFBB24 0%, #FDB003 100%);
+    box-shadow: 6px 8px 12px -6px rgba(255, 187, 36, 0.34);
+    border-radius: 50px;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 4px 4px 4px rgba(241, 199, 19, 0.1);
+}
+/* ingo page */
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.info__heading{
+    font-family: 'Days One', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 120%;
+    margin-bottom: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #333331;
+    text-align: center;
+}
+.info__wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.info__one{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 42px;
+}
+.info__card{
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin-right: 108px;
+}
+.info__card2{
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin-right: 110px;
+}
+.info__card3{
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin: 0;
+}
+#info__card{
+    margin-right: 139px;
+}
+#info__card2{
+    margin-right: 120px;
+    margin-left: 10px;
+}
+.info__img{
+    width: 53px;
+    height: 53px;
+    margin-right: 42px;
+}
+.elps{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    left: 63px;
+    top: -7px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, #FFBB24 0%, #FDB003 100%);
+}
+.info__text{
+    font-family: 'Proxima Nova', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 17px;
+    color: #050505;
+    white-space: nowrap;
+    z-index: 2;
+    text-transform: uppercase;
+}
+.info__two{
+    display: flex;
+    margin-bottom: 111px;
+}
+/* taxi page */
+.taxi{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 200px;
+    padding-right: 200px;
+    box-sizing: border-box;
+    margin-bottom: 101px;
+}
+.taxi__title{
+    display: flex;
+    margin-bottom: 40px;
+}
+.taxi__heading{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 120%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #333331;
+    font-family: 'Days One', sans-serif;
+    margin-right: 28px;
+}
+.taxi__eco{
+    width: 136px;
+    height: 56px;
+    background: #333331;
+    box-shadow: 6px 8px 12px -6px rgba(255, 187, 36, 0.34);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Proxima Nova', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-right: 18px;
+    text-shadow: 4px 4px 4px rgba(241, 199, 19, 0.1);
+}
+.taxi__com{
+    width: 147px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 18px;
+    text-decoration: none;
+    background: linear-gradient(90deg, #FFBB24 0%, #FDB003 100%);
+    box-shadow: 6px 8px 12px -6px rgba(255, 187, 36, 0.34);
+    border-radius: 50px;
+    font-family: 'Proxima Nova', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 4px 4px 4px rgba(241, 199, 19, 0.1);
+}
+.taxi__plus{
+    width: 161px;
+    height: 56px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, #FFBB24 0%, #FDB003 100%);
+    box-shadow: 6px 8px 12px -6px rgba(255, 187, 36, 0.34);
+    border-radius: 50px;
+    font-family: 'Proxima Nova', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 4px 4px 4px rgba(241, 199, 19, 0.1);
+}
+.taxi__small{
+    font-family: 'Proxima Nova', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 36px;
+    text-align: center;
+    color: #333331;
+    margin-bottom: 45px;
+}
+.taxi__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.taxi__one{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 41px;
+}
+.taxi__two{
+    display: flex;
+    justify-content: space-between;
+}
+.taxi__card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding-top: 31px;
+    padding-bottom: 37px;
+    padding-left: 21px;
+    padding-right: 21px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 30px #FDB106;
+    border-radius: 40px;
+    width: 479px;
+    height: 637px;
+    margin-right: 40px;
+}
+
+
+.taxi__card2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding-top: 31px;
+    padding-bottom: 37px;
+    padding-left: 21px;
+    padding-right: 21px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 30px #FDB106;
+    border-radius: 40px;
+    width: 479px;
+    height: 637px;
+    margin-right: 40px;
+}
+.taxi__card3{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding-top: 31px;
+    padding-bottom: 37px;
+    padding-left: 21px;
+    padding-right: 21px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 30px #FDB106;
+    border-radius: 40px;
+    width: 479px;
+    height: 637px;
+}
+.taxi__card3:hover{
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
+}
+.taxi__card2:hover{
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
+}
+.taxi__card:hover{
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
+}
+
+.taxi__text{
+    font-family: 'Days One', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #333331;
+    margin-bottom: 13px;
+}
+.taxi__card2 .taxi__txt{
+    font-family: 'Proxima Nova', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FDB106;
+    margin-bottom: 1px;
+}
+.taxi__card3 .taxi__txt{
+    font-family: 'Proxima Nova', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FDB106;
+    margin-bottom: 1px;
+}
+.taxi__txt{
+    font-family: 'Proxima Nova', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FDB106;
+    margin-bottom: 56px;
+}
+.taxi__img{
+    width: 437px;
+    height: 232px;
+    margin-bottom: 25px;
+}
+.taxi__sm{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    font-family: 'Days One', sans-serif;
+    margin-bottom: 1px;
+}
+.taxi__txt2{
+    font-family: 'Proxima Nova', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FDB106;
+    margin-bottom: 10px;
+}
+.taxi__btn{
+    cursor: pointer;
+    font-family: 'Proxima Nova', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 13px 28px 12px;
+    width: 328px;
+    height: 56px;
+    left: calc(50% - 328px/2);
+    bottom: 38px;
+    background: linear-gradient(90deg, #FFBB24 0%, #FDB003 100%);
+    box-shadow: 6px 8px 12px -6px rgba(255, 187, 36, 0.34);
+    border-radius: 50px;
+    border: none;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+}
+/* income page */
+.income{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 190px;
+    margin-bottom: 100px;
+}
+.income__heading{
+    font-family: 'Days One', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 120%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 43px;
+}
+.income__city{
+    display: flex;
+    margin-bottom: 78px;
+}
+.income__moscow{
+    display: flex;
+    margin-right: 123px;
+}
+.income__moscow2{
+    display: flex;
+    margin-right: 101px;
+}
+.income__moscow3{
+    display: flex;
+    margin-right: 101px;
+}
+.income__moscow img{
+    width: 70px;
+    height: 70px;
+    margin-right: 28px;
+}
+.income__moscow2 img{
+    width: 70px;
+    height: 70px;
+    margin-right: 28px;
+}
+.income__moscow3 img{
+    width: 70px;
+    height: 70px;
+    margin-right: 28px;
+}
+.income__price{
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+}
+.income__small{
+    font-family: 'Proxima Nova', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #000000;
+}
+.income__txt{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    margin-top: 7px;
+}
+.in__span{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FDB106;
+    display: block;
+}
+/* feedback-page */
+.feed-back{
+    background-image: url(/img/polo2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 1390px;
+    height: 421px;
+    position: relative;
+    padding-top: 22px;
+}
+.fb__form{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: -40px;
+}
+.fb__img{
+    width: 390px;
+    height: 49px;
+    margin-bottom: 17px;
+}
+.fb__inp{
+    width: 330px;
+    padding: 12px;
+    text-align: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background: #FFFFFF;
+    border: 2px solid #FDB106;
+    box-shadow: 6px 8px 12px -6px rgba(255, 187, 36, 0.34);
+    border-radius: 50px;
+    font-family: italic;
+}
+.fb__btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 330px;
+    height: 56px;
+    background: linear-gradient(90deg, #FFBB24 0%, #FDB003 100%);
+    box-shadow: 6px 8px 12px -6px rgba(255, 187, 36, 0.34);
+    border-radius: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 4px 4px 4px rgba(241, 199, 19, 0.1);
+    border: none;
+    margin-top: 7px;
+}
+/* rent page */
+.rent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 605px;
+    padding-right: 605px;
+}
+.rent__heading{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 120%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 32px;
+    width: 676px;
+    height: 96px;
+    white-space: wrap;
+}
+.rent__wrapper{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid red;
+    margin-bottom: 100px;
+}
+.rent__plus{
+    position: relative;
+    margin-right: 40px;
+    width: 335px;
+    height: 390px;
+}
+.rent__minus{
+    position: relative;
+    width: 335px;
+    height: 405px;
+}
+.rent__img{
+    position: absolute;
+    left: -30px;
+    top: -30px;
+}
+/* best page */
+.best{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding-top: 22px;
+    padding-left: 473px;
+    padding-right: 472px;
+    padding-bottom: 35px;
+}
+.best__heading{
+    font-family: 'Days One', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 120%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 35px;
+
+}
