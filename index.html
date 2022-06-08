@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link
-    rel="stylesheet"
-    href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <title>buy-taxi</title>
 </head>
+
 <body>
     <main class="container">
         <header class="header">
@@ -27,8 +26,10 @@
             </nav>
             <div class="call">
                 <p class="call__phone">8(495) 432 62 45</p>
+                <p class="call__phone-mob">8(495) 432 62 45</p>
                 <p class="call__me">Звонок бесплатный</p>
-            </div>            
+            </div>
+            <img src="/img/burger.svg" alt="menu" class="burger">
         </header>
         <section class="content">
             <div class="content__car">
@@ -38,20 +39,23 @@
                 </h1>
                 <img class="car__img" src="/img/Sonata.png" alt="Sonata">
             </div>
+
             <div class="content__price">
                 <h2 class="price__title">
                     hyunday solaris new
-                    <span class="title__price">от 459 100 ₽</span> 
+                    <span class="title__price">от 459 100 ₽</span>
                 </h2>
                 <p class="title__text">
-                    В кредит 
-                    <span class="text__day">от 183 ₽/день</span> 
+                    В кредит
+                    <span class="text__day">от 183 ₽/день</span>
                 </p>
                 <div class="content__carusel">
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
-                          <div class="swiper-slide"><img src="/img/solaris2.svg" alt="car__img"></div>
-                          <div class="swiper-slide"><img src="/img/solaris2.svg" alt="car__img"></div>
+                            <div class="swiper-slide">
+                                <img src="/img/solaris2.svg" alt="car__img">
+                            </div>
+                            <div class="swiper-slide"><img src="/img/solaris2.svg" alt="car__img"></div>
                         </div>
                         <div class="swiper-button-next"></div>
                         <div class="swiper-button-prev"></div>
@@ -91,7 +95,67 @@
                     <strong class="content__strong">Осталось 11 автомобилей</strong>
                 </div>
                 <button class="content__btn">купить сейчас</button>
-                <button class="content__btn-mobile">Получить  предложение</button>
+                <button class="content__btn-mobile">Получить предложение</button>
+            </div>
+            <!-- mobile corusel -->
+            <div class="content__price-mobile">
+                <h2 class="price__title">
+                    kia rio new
+                    <span class="title__price" id="title__price">от 459 100 ₽</span>
+                </h2>
+                <span class="ellips"></span>
+
+                <div class="content__carusel">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="/img/rio-small.png" alt="car__img">
+                            </div>
+                            <div class="swiper-slide"><img src="/img/rio-small.png" alt="car__img"></div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+                <div class="content__timing">
+                    <div class="content__wrapper">
+                        <div class="content__time">
+                            <h2 id="days">01</h2>
+                            <small class="small">дней</small>
+                        </div>
+                        <div class="point">
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="content__time">
+                            <h2 id="hours">09</h2>
+                            <small class="small">часов</small>
+                        </div>
+                        <div class="point">
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="content__time">
+                            <h2 id="minutes">09</h2>
+                            <small class="small">минут</small>
+                        </div>
+                        <div class="point">
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="content__time">
+                            <h2 id="seconds">45</h2>
+                            <small class="small">секунд</small>
+                        </div>
+                    </div>
+                    <strong class="content__strong">Осталось 11 автомобилей</strong>
+                </div>
+                <p class="title__text" id="text__day">
+                    В кредит
+                    <span class="text__day">от 183 ₽/день</span>
+                </p>
+                <button class="content__btn">купить сейчас</button>
+                <button class="content__btn-mobile">Получить предложение</button>
             </div>
         </section>
         <section class="info">
@@ -99,7 +163,7 @@
             <div class="info__wrapper">
                 <div class="info__one">
                     <div class="info__card">
-                        <img  class="info__img" src="/img/credit.svg" alt="card">
+                        <img class="info__img" src="/img/credit.svg" alt="card">
                         <span class="elps"></span>
                         <p class="info__text">КРЕДИТ ОТ 3,5% ГОДОВЫХ</p>
                     </div>
@@ -116,11 +180,11 @@
                 </div>
                 <div class="info__two">
                     <div class="info__card2">
-                        <img  class="info__img" src="/img/cash.svg" alt="card">
+                        <img class="info__img" src="/img/cash.svg" alt="card">
                         <span class="elps"></span>
                         <p class="info__text">БЕЗ ПЕРВОНАЧАЛЬНОГО<br> ВЗНОСА</p>
                     </div>
-                    <div class="info__card" id="info__card2">
+                    <div class="info__card">
                         <img class="info__img" src="/img/sert.svg" alt="card">
                         <span class="elps"></span>
                         <p class="info__text">ОДОБРЕНИЯ ПО КРЕДИТУ<br> ДО 99%</p>
@@ -136,11 +200,13 @@
         <section class="taxi">
             <div class="taxi__title">
                 <h2 class="taxi__heading">выберите класс такси:</h2>
-                <a href="#" class="taxi__eco">эконом</a>
-                <a href="#" class="taxi__com">комфорт</a>
-                <a href="#" class="taxi__plus">комфорт+</a>
+                <div class="taxi__btn-wr">
+                    <a href="#" class="taxi__eco">эконом</a>
+                    <a href="#" class="taxi__com">комфорт</a>
+                    <a href="#" class="taxi__plus">комфорт+</a>
+                </div>
             </div>
-            <h3 class="taxi__small">Такси класса эконом</h3>
+            <h3 class="taxi__small">Такси класса <span>эконом</span></h3>
             <div class="taxi__wrapper">
                 <div class="taxi__one">
                     <div class="taxi__card">
@@ -195,6 +261,7 @@
                         <button class="taxi__btn">оставить заявку</button>
                     </div>
                 </div>
+                <a href="#" class="our__taxi">Показать все такси<br> класса эконом</a>
             </div>
         </section>
         <section class="income">
@@ -205,8 +272,9 @@
                     <div class="income__price">
                         <small class="income__small">Москва</small>
                         <small class="income__small">санкт-петербург</small>
-                        <p class="income__txt">от 120 000 ₽/мес. 
-                        <span class="in__span">до 250 000 ₽/мес.</span></p>
+                        <p class="income__txt">от 120 000 ₽/мес.
+                            <span class="in__span">до 250 000 ₽/мес.</span>
+                        </p>
                     </div>
                 </div>
                 <div class="income__moscow2">
@@ -214,36 +282,99 @@
                     <div class="income__price">
                         <small class="income__small">ОБЛАСТНЫЕ ЦЕНТРЫ</small>
                         <small class="income__small">КРУПНЫЕ ГОРОДА</small>
-                        <p class="income__txt">от 120 000 ₽/мес. 
-                        <span class="in__span">до 250 000 ₽/мес.</span></p>
+                        <p class="income__txt">от 120 000 ₽/мес.
+                            <span class="in__span">до 250 000 ₽/мес.</span>
+                        </p>
                     </div>
                 </div>
                 <div class="income__moscow3">
                     <img src="/img/good.svg" alt="good-icon">
                     <div class="income__price">
                         <small class="income__small">КРУПНЫЕ ГОРОДА</small>
-                        <p class="income__txt">от 120 000 ₽/мес. 
-                        <span class="in__span">до 250 000 ₽/мес.</span></p>
+                        <p class="income__txt">от 120 000 ₽/мес.
+                            <span class="in__span">до 250 000 ₽/мес.</span>
+                        </p>
                     </div>
                 </div>
             </div>
+            <button class="income__btn-hidden">подробнее</button>
+            <form action="" class="form-mob">
+                <div class="form-txt">от 90 ₽ в сутки</div>
+                <input class="fb__inp" type="text" placeholder="ваше имя">
+                <input class="fb__inp" type="text" placeholder="введите  номер телефона">
+                <button class="fb__btn">Получить предложение</button>
+            </form>
             <div class="feed-back">
                 <form action="" class="fb__form">
                     <img class="fb__img" src="/img/days.svg" alt="days">
                     <input class="fb__inp" type="text" placeholder="ваше имя">
                     <input class="fb__inp" type="text" placeholder="введите  номер телефона">
-                    <button class="fb__btn">Получить  предложение</button>
+                    <button class="fb__btn">Получить предложение</button>
                 </form>
             </div>
         </section>
         <section class="rent">
-            <h2 class="rent__heading">почему своё такси<br> ивыгоднее аренды?</h2>
+            <h2 class="rent__heading">почему своё такси<br> выгоднее аренды?</h2>
             <div class="rent__wrapper">
+                <div id="rent__plus">
+                    <img class="rent__m" src="/img/yes.svg" alt="plus">
+                    <ul>
+                        <li>Авто в личной собственности по ПТС</li>
+                        <li>Платеж по кредиту от 90 руб. в день</li>
+                        <li>Рассрочка 0% без первоначального 
+                            взноса</li>
+                        <li>Бесплатная установка ГБО 
+                            для экономии топлива</li>
+                        <li>Оклейка автомобиля по ГОСТу</li>
+                        <li>Быстрое оформление всех 
+                            документов под ключ</li>
+                    </ul>
+                </div>
+                <div id="rent__minus">
+                    <img class="rent__m" src="/img/not.svg" alt="plus">
+                    <ul>
+                        <li>Авто в собственности автопарка</li>
+                        <li>Платеж за арендованное такси 
+                            от 1200 руб. в день</li>
+                        <li>Рассрочка 0% без первоначального 
+                            взноса</li>
+                        <li>Бесплатная установка ГБО 
+                            для экономии топлива</li>
+                        <li>Оклейка автомобиля по ГОСТу</li>
+                        <li>Быстрое оформление всех 
+                            документов под ключ</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="rent__wrapper-mob">
                 <div class="rent__plus">
-                    <img class="rent__img" src="/img/plus.svg" alt="plus">
+                    <img src="/img/yes.svg" alt="" class="img-plus">
+                    <ul>
+                        <li>Авто в личной собственности по ПТС</li>
+                        <li>Платеж по кредиту от 90 руб. в день</li>
+                        <li>Рассрочка 0% без первоначального 
+                            взноса</li>
+                        <li>Бесплатная установка ГБО 
+                            для экономии топлива</li>
+                        <li>Оклейка автомобиля по ГОСТу</li>
+                        <li>Быстрое оформление всех 
+                            документов под ключ</li>
+                    </ul>
                 </div>
                 <div class="rent__minus">
-                    <img class="rent__img" src="/img/minus.svg" alt="plus">
+                    <img src="/img/not.svg" alt="" class="img-minus">
+                    <ul>
+                        <li>Авто в собственности автопарка</li>
+                        <li>Платеж за арендованное такси 
+                            от 1200 руб. в день</li>
+                        <li>Рассрочка 0% без первоначального 
+                            взноса</li>
+                        <li>Бесплатная установка ГБО 
+                            для экономии топлива</li>
+                        <li>Оклейка автомобиля по ГОСТу</li>
+                        <li>Быстрое оформление всех 
+                            документов под ключ</li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -254,17 +385,151 @@
             <div class="best__wrapper">
                 <div class="best__one">
                     <div class="best__block">
-                        <img class="icon1" src="" alt="riting">
+                        <img class="icon1" src="/img/icon1.svg" alt="riting">
                         <p class="best__txt">
-                            Помощь в оформлении 
+                            Помощь в оформлении<br>
                             документов
                         </p>
                     </div>
+                    <div class="best__block">
+                        <img class="icon2" src="/img/icon2.svg" alt="riting">
+                        <p class="best__txt">
+                            ГБО. Установка и монтаж
+                        </p>
+                    </div>
+                    <div class="best__block">
+                        <img class="icon3" src="/img/icon3.svg" alt="riting">
+                        <p class="best__txt">
+                            Более 1500 авто в наличии
+                        </p>
+                    </div>
+                    <div class="best__block">
+                        <img class="icon4" src="/img/icon4.svg" alt="riting">
+                        <p class="best__txt">
+                            Покупка такси за один день
+                        </p>
+                    </div>
                 </div>
+                <form action="" class="best__form">
+                    <input type="text" class="best__inp" placeholder="ваше имя">
+                    <input type="text" class="best__inp" placeholder="введите  номер телефона">
+                    <button class="best__btn">Получить предложение</button>
+                </form>
+            </div>
+            <div class="best__info">
+                <div class="info__mobile">
+                    <small class="info__small">Карта сайта</small>
+                    <small class="info__small">контакты</small>
+                </div>
+                <small class="info__small" id="hidden">Карта сайта</small>
+                <small class="info__small" id="hidden">контакты</small>
+                <small class="info__small">
+                    правовая<br>
+                    информация</small>
+
             </div>
         </section>
         <footer class="footer">
-
+            <h3 class="footer__heading">Каталог такси</h3>
+            <div class="footer__wrapper">
+                <div class="footer__cars1">
+                    <div class="cars__block1">
+                        <ul class="ul__block">
+                            <li>VOLKSWAGEN POLO NEW</li>
+                            <li>KIA K5 NEW</li>
+                            <li>VOLKSWAGEN JETTA NEW</li>
+                            <li>CITROEN BERLINGO</li>
+                            <li>CITROEN C4</li>
+                            <li>FORD FOCUS SEDAN</li>
+                            <li>FORD GALAXY</li>
+                            <li>HYUNDAI I40</li>
+                            <li>KIA CERATO</li>
+                            <li>MAZDA 3 SEDAN</li>
+                            <li>MAZDA 3 HATCBACK</li>
+                            <li>NISSAN TEANA</li>
+                            <li>RENAULT DOKKER STEPWAY</li>
+                            <li>SKODA SUPERB</li>
+                            <li>TOYOTA COROLLA</li>
+                            <li>VOLKSWAGEN PASSAT</li>
+                        </ul>
+                    </div>
+                    <div class="cars__block2">
+                        <ul class="ul__block">
+                            <li>HYUNDAI CRETA NEW</li>
+                            <li>HYUNDAI SOLARIS NEW</li>
+                            <li>KIA SOUL NEW</li>
+                            <li>HYUNDAI SONATA NEW</li>
+                            <li>MAZDA 6 NEW</li>
+                            <li>HYUNDAI Н1</li>
+                            <li>RENAULT DOKKER</li>
+                            <li>TOYOTA ALPHARD</li>
+                            <li>CITROEN JUMPY</li>
+                            <li>MERCEDES-BENZ V-CLASS</li>
+                            <li>MERCEDES-BENZ VITO</li>
+                            <li>PEUGEOT TRAVELLER</li>
+                            <li>VOLKSWAGEN CARAVELLE</li>
+                            <li>VOLKSWAGEN TRANSPORTER</li>
+                            <li>VOLKSWAGEN MULTIVAN</li>
+                            <li>RAVON NEXIA R3</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__cars2">
+                    <div class="cars__block3">
+                        <ul class="ul__block">
+                            <li>LADA XRAY</li>
+                            <li>LADA VESTA SW CROSS</li>
+                            <li>LADA VESTA SW</li>
+                            <li>LADA GRANTA LIFTBACK</li>
+                            <li>TOYOTA CAMRY NEW</li>
+                            <li>KIA RIO X-LINE</li>
+                            <li>FORD FOCUS HATCHBACK</li>
+                            <li>HYUNDAI CRETA</li>
+                            <li>RENAULT LOGAN NEW</li>
+                            <li>CHEVROLET ORLANDO</li>
+                            <li>DATSUN MI-DO</li>
+                            <li>PEUGEOT 308</li>
+                            <li>DATSUN ON-DO</li>
+                            <li>KIA CEED SW NEW</li>
+                            <li>MAZDA 3 HATCHBACK</li>
+                            <li>KIA SOUL</li>
+                        </ul>
+                    </div>
+                    <div class="cars__block4">
+                        <ul class="ul__block">
+                            <li>SKODA RAPID NEW</li>
+                            <li>HYUNDAI SOLARIS</li>
+                            <li>KIA RIO</li>
+                            <li>NISSAN ALMERA</li>
+                            <li>VOLKSWAGEN POLO</li>
+                            <li>SKODA RAPID</li>
+                            <li>HYUNDAI ELANTRA</li>
+                            <li>HYUNDAI SONATA</li>
+                            <li>SKODA OCTAVIA</li>
+                            <li>VOLKSWAGEN JETTA</li>
+                            <li>KIA OPTIMA NEW</li>
+                            <li>MERCEDES-BENZ E-KLASSE</li>
+                            <li>BMW 5ER</li>
+                            <li>AUDI A6</li>
+                            <li>BMW 3 SERIES</li>
+                            <li>CITROEN GRAND C4 PICASSO</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__info">
+                <p class="footer__txt">© 2021 АЛЬФА-ТАКСИ</p>
+                <p class="footer__txt2">Правовая информация Политика конфиденциальности
+                </p>
+            </div>
+            <p class="footer__txt3">Обращаем Ваше внимание на то, что данный интернет-сайт носит исключительно
+                информационный характер и ни при каких условиях не является публичной<br> офертой, определяемой
+                положениями Статьи 437 (2) Гражданского кодекса РФ
+            </p>
+            <p class="footer__txt3-m">Обращаем Ваше внимание на то, что данный интернет-сайт носит<br> исключительно
+                информационный характер и ни при каких условиях не<br> является публичной офертой, определяемой
+                положениями Статьи 437<br> (2) Гражданского кодекса РФ
+            </p>
         </footer>
     </main>
     <script src="main.js"></script>
@@ -272,12 +537,13 @@
 
     <!-- Initialize Swiper -->
     <script>
-      var swiper = new Swiper(".mySwiper", {
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
+        var swiper = new Swiper(".mySwiper", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
     </script>
 </body>
+
 </html>

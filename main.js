@@ -25,3 +25,12 @@ function updateTiming(){
     
 }
 setInterval(updateTiming, 1000);
+
+let menu = document.querySelector('.burger')
+let nav = document.querySelector('.header__navigation')
+menu.addEventListener('click', ()=>{
+    nav.style.display = 'block'
+    nav.style.display = 'flex'
+    nav.style.flexDerection = 'column'
+    nav.style.width = '320px'
+})
