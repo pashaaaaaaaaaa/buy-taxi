@@ -27,10 +27,16 @@ function updateTiming(){
 setInterval(updateTiming, 1000);
 
 let menu = document.querySelector('.burger')
-let nav = document.querySelector('.header__navigation')
+let close = document.querySelector('.burger__active')
+let nav = document.querySelector('.menu-m')
+
 menu.addEventListener('click', ()=>{
-    nav.style.display = 'block'
-    nav.style.display = 'flex'
-    nav.style.flexDerection = 'column'
-    nav.style.width = '320px'
+    menu.classList.toggle('burger__active')
+    
+    if(menu.classList.contains('burger__active')){
+        nav.style.display = 'block';
+     }else{
+        nav.style.display = 'none';
+
+     }
 })
