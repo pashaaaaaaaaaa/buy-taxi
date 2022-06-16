@@ -1,5 +1,3 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Days+One&display=swap'); */
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap'); */
 *{
     margin: 0;
     padding: 0;
@@ -43,7 +41,8 @@
     justify-content: center;
     align-items: center;
 }
-.header__ul li{
+.header__ul a{
+    text-decoration: none;
     cursor: pointer;
     text-decoration: none;
     list-style: none;
@@ -346,6 +345,18 @@
 #hours, 
 #days, 
 #seconds{
+    font-family: 'Days', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+#minutes1, 
+#hours1, 
+#days1, 
+#seconds1{
     font-family: 'Days', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -1336,7 +1347,7 @@ footer{
         margin-bottom: 26px;
     }
     .menu-m{
-        display: block;
+        display: none;
         position: absolute;
         width: 300px;
         height: 250px;
@@ -2223,7 +2234,10 @@ footer{
     .info__mobile small:nth-child(1){
         margin-bottom: 10px;
     }
-    #hidden{
+    .hidden{
+        display: none;
+    }
+    .hidden2{
         display: none;
     }
     .info__small{
@@ -2428,6 +2442,9 @@ footer{
         width: 20px;
         height: 15px;
         margin-bottom: 20px;
+    }
+    .menu-m{
+        display: none;
     }
     .content{
         width: 100%;
@@ -3075,7 +3092,7 @@ footer{
         height: 96px;
         white-space: wrap;
         font-weight: 400;
-        font-size: 26px;
+        font-size: 22px;
         line-height: 30px;
         margin: 0;
         margin-bottom: 15px;
@@ -3272,7 +3289,10 @@ footer{
     .info__mobile small:nth-child(1){
         margin-bottom: 7px;
     }
-    #hidden{
+    .hidden{
+        display: none;
+    }
+    .hidden2{
         display: none;
     }
     .info__small{
