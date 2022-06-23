@@ -6,12 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <title>buy-taxi</title>
 </head>
 
-<body>
-    <main class="container">
+<body style='overflow-x:hidden;'>
         <header class="header">
             <a href="" class="header__logo">
                 <img src="/img/logo.svg" alt="logo-taxi">
@@ -117,9 +117,9 @@
             <div class="content__price-mobile">
                 <h2 class="price__title">
                     kia rio new
-                    <span class="title__price" id="title__price">от 459 100 ₽</span>
+                    <span class="title__price title__price2">от 459 100 ₽</span>
                 </h2>
-                <span class="ellips"></span>
+                <div class="ellips"></div>
 
                 <div class="content__carusel">
                     <div class="swiper mySwiper">
@@ -166,7 +166,7 @@
                     </div>
                     <strong class="content__strong">Осталось 11 автомобилей</strong>
                 </div>
-                <p class="title__text" id="text__day">
+                <p class="title__text text__day">
                     В кредит
                     <span class="text__day">от 183 ₽/день</span>
                 </p>
@@ -183,7 +183,7 @@
                         <span class="elps"></span>
                         <p class="info__text">КРЕДИТ ОТ 3,5% ГОДОВЫХ</p>
                     </div>
-                    <div class="info__card" id="info__card">
+                    <div class="info__card info__car">
                         <img class="info__img" src="/img/wallet.svg" alt="card">
                         <span class="elps"></span>
                         <p class="info__text">Платеж от 64 ₽/день</p>
@@ -224,7 +224,6 @@
             </div>
             <h3 class="taxi__small">Такси класса <span>эконом</span></h3>
             <div class="taxi__wrapper">
-                <div class="taxi__one">
                     <div class="taxi__card">
                         <h4 class="taxi__text">kia rio new</h4>
                         <p class="taxi__txt">от 459 100 ₽</p>
@@ -249,9 +248,6 @@
                         <p class="taxi__txt2">от 183 ₽/день</p>
                         <button class="taxi__btn">оставить заявку</button>
                     </div>
-                </div>
-
-                <div class="taxi__two">
                     <div class="taxi__card">
                         <h4 class="taxi__text">RENAULT LOGAN</h4>
                         <p class="taxi__txt">от 459 100 ₽</p>
@@ -260,7 +256,7 @@
                         <p class="taxi__txt2">от 183 ₽/день</p>
                         <button class="taxi__btn">оставить заявку</button>
                     </div>
-                    <div class="taxi__card" id="almera__card">
+                    <div class="taxi__card almera__card">
                         <h4 class="taxi__text">NISSAN ALMERA</h4>
                         <p class="taxi__txt">от 459 100 ₽</p>
                         <img class="taxi__img" src="/img/almera.png" alt="rio">
@@ -276,7 +272,6 @@
                         <p class="taxi__txt2">от 183 ₽/день</p>
                         <button class="taxi__btn">оставить заявку</button>
                     </div>
-                </div>
                 <a href="#" class="our__taxi">Показать все такси<br> класса эконом</a>
             </div>
         </section>
@@ -332,7 +327,7 @@
         <section class="rent">
             <h2 class="rent__heading">почему своё такси<br> выгоднее аренды?</h2>
             <div class="rent__wrapper">
-                <div id="rent__plus">
+                <div class="rent__plus plusAdd">
                     <img class="rent__m" src="/img/yes.svg" alt="plus">
                     <ul>
                         <li>Авто в личной собственности по ПТС</li>
@@ -346,7 +341,7 @@
                             документов под ключ</li>
                     </ul>
                 </div>
-                <div id="rent__minus">
+                <div class="rent__minus">
                     <img class="rent__m" src="/img/not.svg" alt="plus">
                     <ul>
                         <li>Авто в собственности автопарка</li>
@@ -547,7 +542,6 @@
                 положениями Статьи 437<br> (2) Гражданского кодекса РФ
             </p>
         </footer>
-    </main>
     <script src="main.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 

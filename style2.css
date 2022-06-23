@@ -1,31 +1,21 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-    border: 1px solid red;
-}
+@media (min-width:1520px) and (max-width:1850px) {
+
 .header{
-    max-width: 1920px;
-    margin: 0 auto;
     width: 100%;
     box-sizing: border-box;
     padding-top: 11px;
-    padding-left: 200px;
+    padding-left: 100px;
     padding-bottom: 13px;
-    padding-right: 272px;
+    padding-right: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: #333331;
-    max-width: 1920px;
-    border: none;
 }
 .header__logo{
-    width: 220px;
+    width: 200px;
     height: 27px;
-    margin-right: 130px;
+    margin-right: 90px;
 }
 .header__navigation{
     display: flex;
@@ -53,7 +43,7 @@ body{
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
-    margin-right: 53px;
+    margin-right: 43px;
     white-space: nowrap;
 }
 .call{
@@ -61,7 +51,7 @@ body{
     border-left: 3px solid #FDB106;
     box-sizing: border-box;
     padding-left: 16px;
-    margin-left: 61px;
+    margin-left: 50px;
 }
 .call__phone{
     font-family: 'Proxima Nova', sans-serif;
@@ -136,8 +126,6 @@ body{
 }
 /* content page */
 .content{
-    margin: 0 auto;
-    max-width: 1920px;
     width: 100%;
     border: none;
     border-top: 6px solid #FDB106;
@@ -145,7 +133,8 @@ body{
     height: 600px;
     box-sizing: border-box;
     display: flex;
-    padding-right: 200px;
+    padding-right: 100px;
+    padding-left: 100px;
     margin-bottom: 100px;
 }
 .content__car{
@@ -166,7 +155,7 @@ body{
     line-height: 120%;
     text-transform: uppercase;
     margin: 0;
-    margin-left: 200px;
+    /* margin-left: 200px; */
     margin-top: 32px;
     width: 520px;
     height: 144px;
@@ -178,7 +167,7 @@ body{
 .car__img{
     width: 859px;
     height: 483px;
-    left: 166px;
+    left: 0;
     top: 100px;
     position: absolute;
 }
@@ -186,8 +175,8 @@ body{
     display: flex;
     flex-direction: column;
     margin-top: 16px;
-    margin-left: 650px;
-    /* margin-right: 200px; */
+    margin: 0;
+    margin-left: 450px;
 }
 .content__price-mobile{
     display: none;
@@ -418,8 +407,9 @@ body{
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin: 0 auto;
-    max-width: 1920px;
+    box-sizing: border-box;
+    padding-left: 150px;
+    padding-right: 50px;
 }
 .info__heading{
     font-family: 'Days', sans-serif;
@@ -436,26 +426,24 @@ body{
 .info__wrapper{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 .info__one{
     display: flex;
     justify-content: space-between;
     margin-bottom: 42px;
 }
-.info__two{
-    margin-left: -10px;
-}
 .info__card{
     display: flex;
     position: relative;
     align-items: center;
-    margin-right: 108px;
 }
+
 .info__card2{
     display: flex;
     position: relative;
     align-items: center;
-    margin-right: 120px;
+    
 }
 .info__card3{
     display: flex;
@@ -463,13 +451,6 @@ body{
     align-items: center;
     margin: 0;
     margin-left: -20px;
-}
-.info__card{
-    /* margin-right: 139px; */
-}
-.info__card2{
-    margin-right: 120px;
-    margin-left: 10px;
 }
 .info__img{
     width: 53px;
@@ -502,14 +483,12 @@ body{
 }
 /* taxi page */
 .taxi{
-    max-width: 1920px;
-    margin: 0 auto;
     width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
     box-sizing: border-box;
     margin-bottom: 101px;
 }
@@ -529,6 +508,7 @@ body{
     font-family: 'Days', sans-serif;
     margin-right: 28px;
     margin-bottom: 15px;
+    white-space: nowrap;
 }
 .taxi__heading br{
     display: none;
@@ -615,15 +595,7 @@ body{
     justify-content: space-evenly;
     flex-wrap: wrap;
     align-items: center;
-}
-.taxi__one{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 41px;
-}
-.taxi__two{
-    display: flex;
-    justify-content: space-between;
+    padding: 0;
 }
 .taxi__card{
     display: flex;
@@ -632,14 +604,15 @@ body{
     box-sizing: border-box;
     padding-top: 31px;
     padding-bottom: 37px;
-    padding-left: 21px;
-    padding-right: 21px;
+    padding-left: 20px;
+    padding-right: 20px;
     background: #FFFFFF;
     box-shadow: 0px 0px 30px #FDB106;
     border-radius: 40px;
     width: 479px;
     height: 637px;
-    margin-right: 40px;
+    margin: 0;
+    margin-right: 20px;
     margin-bottom: 40px;
 }
 
@@ -650,14 +623,15 @@ body{
     box-sizing: border-box;
     padding-top: 31px;
     padding-bottom: 37px;
-    padding-left: 21px;
-    padding-right: 21px;
+    padding-left: 20px;
+    padding-right: 20px;
     background: #FFFFFF;
     box-shadow: 0px 0px 30px #FDB106;
     border-radius: 40px;
     width: 479px;
     height: 637px;
-    margin-right: 40px;
+    margin: 0;
+    margin-right: 20px;
     margin-bottom: 40px;
 }
 .taxi__card3{
@@ -667,8 +641,8 @@ body{
     box-sizing: border-box;
     padding-top: 31px;
     padding-bottom: 37px;
-    padding-left: 21px;
-    padding-right: 21px;
+    padding-left: 20px;
+    padding-right: 20px;
     background: #FFFFFF;
     box-shadow: 0px 0px 30px #FDB106;
     border-radius: 40px;
@@ -795,14 +769,13 @@ body{
 }
 /* income page */
 .income{
-    margin: 0 auto;
-    max-width: 1920px;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
     box-sizing: border-box;
-    padding-left: 190px;
+    padding: 0;
+    padding-left: 10px;
     margin-bottom: 100px;
 }
 .income__heading{
@@ -948,8 +921,6 @@ body{
 }
 /* rent page */
 .rent{
-    max-width: 1920px;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1061,8 +1032,6 @@ body{
 
 /* best page */
 .best{
-    margin: 0 auto;
-    max-width: 1920px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1207,14 +1176,10 @@ body{
 }
 /* footer page */
 footer{
-    max-width: 1920px;
-    margin: 0 auto;
     width: 100%;
     height: 979px;
-    padding-top: 103px;
-    padding-left: 200px;
-    padding-bottom: 97px;
-    padding-right: 201px;
+    padding: 0;
+    padding: 100px;
     box-sizing: border-box;
     background: #333331;
 }
@@ -1237,15 +1202,15 @@ footer{
 }
 .cars__block1{
     display: flex;
-    margin-right: 181px;
+    margin-right: 100px;
 }
 .cars__block2{
     display: flex;
-    margin-right: 145px;
+    margin-right: 100px;
 }
 .cars__block3{
     display: flex;
-    margin-right: 144px;
+    margin-right: 100px;
 }
 .ul__block{
     text-decoration: none;
@@ -1261,6 +1226,7 @@ footer{
     white-space: nowrap;
 }
 .footer__info{
+    width: 100%;
     display: flex;
     align-items: center;
     margin-bottom: 27px;
@@ -1300,32 +1266,1302 @@ footer{
     text-align: center;
     color: #FFFFFF;
     text-align: left;
-    white-space: nowrap;
+    white-space: wrap;
+    word-wrap: break-word;
+    overflow-x: hidden;
 }
+}
+@media (min-width:1200px) and (max-width:1520px) {
 
-/* mobile page  */
-
-@media (min-width:320px) and (max-width:768px) {
-    .plusAdd{
-        margin: 0;
-    }
-    .container{
+    .header{
         width: 100%;
         box-sizing: border-box;
-        margin: 0 auto;
+        padding: 0;
+        padding-top: 11px;
+        padding-bottom: 13px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background: #333331;
+    }
+    .header__logo{
+        width: 150px;
+        height: 20px;
+        margin-right: 70px;
+    }
+    .header__navigation{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .menu-m{
+        display: none;
+    }
+    .header__ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .header__ul a{
+        text-decoration: none;
+        cursor: pointer;
+        text-decoration: none;
+        list-style: none;
+        font-family: 'Proxima Nova', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-right: 15px;
+        white-space: nowrap;
+    }
+    .call{
+        border: none;
+        border-left: 3px solid #FDB106;
+        box-sizing: border-box;
+        padding-left: 16px;
+        margin-left: 15px;
+    }
+    .call__phone{
+        font-family: 'Proxima Nova', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin: 0;
+        text-align: left;
+    }
+    .call__phone-mob{
+        display: none;
+    }
+    .call__me{
+        font-family: 'Proxima Nova', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 25px;
+        color: #FDB106;
+        margin: 0;
+        white-space: nowrap;
+    }
+    .burger{
+        display: none;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .burger span{
+     display: none;
+    }
+    .burger__active span:nth-child(2){
+        transform: rotate(-45deg) translateY(6px) translateX(-5px);
+    }   
+    .burger__active span:nth-child(1){
+        display: none;
+    }   
+    .burger__active span:nth-child(3){
+        transform: rotate(45deg);
+    }   
+    .menu-m{
+        display: none;
+    }
+    .menu-ul{
+        display: flex;
+        width: 250px;
+        height: 200px;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: left;
+        list-style: none;
+    }
+    .menu-ul li{
+        font-size: 18px;
+        color: #FDB106;
+        font-family: 'Proxima Nova', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        text-transform: uppercase
+    }
+    .menu-ul li:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    .burger__active .menu-m{
+        right: 0;
+    }
+    /* content page */
+    .content{
+        width: 100%;
+        border: none;
+        border-top: 6px solid #FDB106;
+        background-image: url(/img/backround.png);
+        height: 600px;
+        box-sizing: border-box;
+        display: flex;
+        padding-right: 50px;
+        padding-left: 50px;
+        margin-bottom: 100px;
+    }
+    .content__car{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    
+    }
+    .car__text{
+        white-space: wrap;
+        font-family: 'Days', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        color: white;
+        font-size: 32px;
+        line-height: 120%;
+        text-transform: uppercase;
+        margin: 0;
+        margin-top: 32px;
+        width: 520px;
+        height: 144px;
+        border: 0.5px solid #FDB106;
+        border-radius: 10px;
+        white-space: wrap;
+    }
+    
+    .car__img{
+        width: 780px;
+        height: 463px;
+        left: 0;
+        top: 100px;
+        position: absolute;
+    }
+    .content__price{
+        display: flex;
+        flex-direction: column;
+        margin-top: 16px;
+        margin: 0;
+        margin-left: 230px;
+    }
+    .content__price-mobile{
+        display: none;
+        flex-direction: column;
+        margin-top: 16px;
+        margin-left: 650px;
+        margin-right: 200px;
+    }
+    .price__title{
+        font-family: 'Days', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 120%;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-bottom: 22px;
+        width: 350px;
+        height: 146px;
+        white-space: wrap;
+    }
+    .title__price{
+        color: #FDB106;
+    }
+    .title__text{
+        font-family: 'Proxima Nova', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 36px;
+        margin: 0;
+        margin-left: 80px;
+        color: white;
+        width: 227px;
+        height: 78px;
+        white-space: wrap;
+    }
+    .text__day{
+        color: #FDB106;
+        display: block;
+        white-space: nowrap;
+    }
+    
+    /* swiper page */
+    .swiper {
+        width: 380px;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .swiper-slide {
+        flex-direction: column;
+        text-align: center;
+        font-size: 18px;
+        width: 100px;
+        height: 100px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    
+    .swiper-slide img {
+        display: block;
+        width: 233px;
+        height: 137px;
+        background-position: center;
+        background-size: contain;
+        margin: 0;
+    }
+    
+    .swiper-button-next, 
+    .swiper-button-prev{
+        transform: matrix(1, 0, 0, -1, 0, 0);
+        width: 40px !important;
+        height: 40px !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background-color: white;
+        border: none;
+        height: 40px;
+        margin: 0;
+        padding: 0;
+        
+    }
+    
+    .swiper-button-next::after{
+        content: '' !important;
+        color: #FDB106;
+        background-image: url(/img/next.svg);
+        width: 6px;
+        height: 12px;
+        background-size: contain;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .swiper-button-prev::after{
+        content: '' !important;
+        background-image: url(/img/prev.svg);
+        color: #FDB106;
+        width: 6px;
+        height: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /* timing page */
+    .content__timing{
+        display: flex;
+        flex-direction: column;
+    }
+    .content__wrapper{
+        display: flex;
+        margin-bottom: 6px;
+        justify-content: space-between;
+        align-items: center;
+        width: 232px;
+        height: 47px;
+        margin-left: 80px;
+    }
+    .point{
+        display: flex;
+        margin: 0;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 15px;
+        margin-top: -15px;
+    }
+    .point div{
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background: white;
+        
+    }
+    .content__time{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #minutes, 
+    #hours, 
+    #days, 
+    #seconds{
+        font-family: 'Days', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 30px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+    #minutes1, 
+    #hours1, 
+    #days1, 
+    #seconds1{
+        font-family: 'Days', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 30px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+    .small{
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 17px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    .content__strong{
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 25px;
+        text-align: center;
+        color: #FDB106;
+        margin-left: 10px;
+        margin-bottom: 30px;
+    } 
+    .content__btn-mobile{
+        display: none;
+    }
+    .content__btn{
+        cursor: pointer;
+        margin-left: 80px;
+        width: 242px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background: linear-gradient(90deg, #FFBB24 0%, #FDB003 100%);
+        box-shadow: 6px 8px 12px -6px rgba(255, 187, 36, 0.34);
+        border-radius: 50px;
+        display: flex;
+        font-family: 'Roboto', sans-serif;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        text-shadow: 4px 4px 4px rgba(241, 199, 19, 0.1);
+    }
+    /* ingo page */
+    .info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0;
+        padding-left: 120px;
+        padding-right: 50px;
+    }
+    .info__heading{
+        font-family: 'Days', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 120%;
+        margin-bottom: 40px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #333331;
+        text-align: center;
+    }
+    .info__wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .info__one{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 42px;
+    }
+    .info__card{
+        display: flex;
+        position: relative;
+        align-items: center;
+    }
+    
+    .info__card2{
+        display: flex;
+        position: relative;
+        align-items: center;
+        
+    }
+    .info__card3{
+        display: flex;
+        position: relative;
+        align-items: center;
+        margin: 0;
+        margin-left: -20px;
+    }
+    .info__img{
+        width: 53px;
+        height: 53px;
+        margin-right: 42px;
+    }
+    .elps{
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        left: 63px;
+        top: -7px;
+        border-radius: 50%;
+        background: linear-gradient(90deg, #FFBB24 0%, #FDB003 100%);
+    }
+    .info__text{
+        font-family: 'Proxima Nova', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 17px;
+        color: #050505;
+        white-space: nowrap;
+        z-index: 2;
+        text-transform: uppercase;
+    }
+    .info__two{
+        display: flex;
+        margin-bottom: 111px;
+    }
+    /* taxi page */
+    .taxi{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 0;
+        padding-left: 50px;
+        padding-right: 50px;
+        box-sizing: border-box;
+        margin-bottom: 101px;
+    }
+    .taxi__title{
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    .taxi__heading{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 120%;
+        text-align: center;
+        text-transform: uppercase;
+        color: #333331;
+        font-family: 'Days', sans-serif;
+        margin-right: 28px;
+        margin-bottom: 15px;
+        white-space: nowrap;
+    }
+    .taxi__heading br{
+        display: none;
+    }
+    .taxi__btn-wr{
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+    .taxi__eco{
+        width: 136px;
+        height: 56px;
+        background: #333331;
+        box-shadow: 6px 8px 12px -6px rgba(255, 187, 36, 0.34);
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Proxima Nova', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-right: 18px;
+        text-shadow: 4px 4px 4px rgba(241, 199, 19, 0.1);
+    }
+    .taxi__com{
+        width: 147px;
+        height: 56px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 18px;
+        text-decoration: none;
+        background: linear-gradient(90deg, #FFBB24 0%, #FDB003 100%);
+        box-shadow: 6px 8px 12px -6px rgba(255, 187, 36, 0.34);
+        border-radius: 50px;
+        font-family: 'Proxima Nova', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        text-shadow: 4px 4px 4px rgba(241, 199, 19, 0.1);
+    }
+    .taxi__plus{
+        width: 161px;
+        height: 56px;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(90deg, #FFBB24 0%, #FDB003 100%);
+        box-shadow: 6px 8px 12px -6px rgba(255, 187, 36, 0.34);
+        border-radius: 50px;
+        font-family: 'Proxima Nova', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        text-shadow: 4px 4px 4px rgba(241, 199, 19, 0.1);
+    }
+    .taxi__small{
+        font-family: 'Proxima Nova', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 36px;
+        text-align: center;
+        color: #333331;
+        margin-bottom: 45px;
+    }
+    .taxi__wrapper{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 0;
+    }
+    .taxi__card{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        box-sizing: border-box;
+        padding-top: 31px;
+        padding-bottom: 37px;
+        padding-left: 20px;
+        padding-right: 20px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 30px #FDB106;
+        border-radius: 40px;
+        width: 479px;
+        height: 637px;
+        margin: 0;
+        margin-bottom: 40px;
+    }
+    
+    .taxi__card2{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        box-sizing: border-box;
+        padding-top: 31px;
+        padding-bottom: 37px;
+        padding-left: 20px;
+        padding-right: 20px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 30px #FDB106;
+        border-radius: 40px;
+        width: 479px;
+        height: 637px;
+        margin: 0;
+        margin-bottom: 40px;
+    }
+    .taxi__card3{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        box-sizing: border-box;
+        padding-top: 31px;
+        padding-bottom: 37px;
+        padding-left: 20px;
+        padding-right: 20px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 30px #FDB106;
+        border-radius: 40px;
+        width: 479px;
+        height: 637px;
+        margin-bottom: 40px;
+    }
+    .almera__card{
+        margin-right: 0;
+    }
+    .taxi__card3:hover{
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
+    }
+    .taxi__card2:hover{
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
+    }
+    .taxi__card:hover{
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
+    }
+    .taxi__card3, .taxi__taxi{
+        /* width: 432px; */
+        white-space: wrap;
+    }
+    
+    .taxi__text{
+        font-family: 'Days', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 120%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        text-transform: uppercase;
+        color: #333331;
+        margin-bottom: 13px;
+    }
+    .taxi__text span{
+        display: block;
+    }
+    .taxi__card2 .taxi__txt{
+        font-family: 'Proxima Nova', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 36px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #FDB106;
+        margin-bottom: 8px;
+    }
+    .taxi__card3 .taxi__txt{
+        font-family: 'Proxima Nova', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 36px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #FDB106;
+        margin-bottom: 8px;
+    }
+    .taxi__txt{
+        font-family: 'Proxima Nova', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 36px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #FDB106;
+        margin-bottom: 56px;
+    }
+    .taxi__img{
+        width: 437px;
+        height: 232px;
+        margin-bottom: 25px;
+    }
+    .taxi__sm{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 32px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        text-transform: uppercase;
+        color: #000000;
+        font-family: 'Days', sans-serif;
+        margin-bottom: 1px;
+    }
+    .taxi__txt2{
+        font-family: 'Proxima Nova', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 36px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #FDB106;
+        margin-bottom: 10px;
+    }
+    .taxi__btn{
+        cursor: pointer;
+        font-family: 'Proxima Nova', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 17px;
+        padding-bottom: 16px;
+        padding-left: 79px;
+        padding-right: 79px;
+        background: linear-gradient(90deg, #FFBB24 0%, #FDB003 100%);
+        box-shadow: 6px 8px 12px -6px rgba(255, 187, 36, 0.34);
+        border-radius: 50px;
+        border: none;
+        color: white;
+        font-weight: 700;
+        font-size: 18px;
+    }
+    .our__taxi{
+        display: none;
+    }
+    /* income page */
+    .income{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0;
+        margin-bottom: 100px;
+    }
+    .income__heading{
+        font-family: 'Days', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 120%;
+        text-align: center;
+        text-transform: uppercase;
+        color: #000000;
+        margin-bottom: 43px;
+    }
+    .income__city{
+        display: flex;
+        margin-bottom: 78px;
+        justify-content: space-between;
+    }
+    .income__btn-hidden{
+        display: none;
+    }
+    .income__moscow{
+        display: flex;
+        margin: 0;
+        margin-right: 100px;
+    }
+    .income__moscow2{
+        display: flex;
+        margin: 0;
+        margin-right: 100px;
+    }
+    .income__moscow3{
+        display: flex;
+        margin: 0;
+    }
+    .income__moscow img{
+        width: 70px;
+        height: 70px;
+        margin-right: 28px;
+    }
+    .income__moscow2 img{
+        width: 70px;
+        height: 70px;
+        margin-right: 28px;
+    }
+    .income__moscow3 img{
+        width: 70px;
+        height: 70px;
+        margin-right: 28px;
+    }
+    .income__price{
+        display: flex;
+        text-align: left;
+        flex-direction: column;
+    }
+    .income__small{
+        font-family: 'Proxima Nova', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        text-transform: uppercase;
+        color: #000000;
+    }
+    .income__txt{
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 200;
+        font-size: 20px;
+        line-height: 24px;
+        color: #000000;
+        margin-top: 7px;
+    }
+    .in__span{
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 200;
+        font-size: 20px;
+        line-height: 24px;
+        color: #FDB106;
+        display: block;
+    }
+    /* feedback-page */
+    .form-mob{
+        display: none;
+    }
+    .feed-back{
+        background-image: url(/img/polo2.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 1120px;
+        height: 421px;
+        position: relative;
+        padding-top: 22px;
+    }
+    .fb__form{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: -40px;
+    }
+    .fb__img{
+        width: 390px;
+        height: 49px;
+        margin-bottom: 17px;
+    }
+    .fb__inp{
+        width: 330px;
+        padding: 12px;
+        text-align: center;
+        margin-bottom: 10px;
+        cursor: pointer;
+        background: #FFFFFF;
+        border: 2px solid #FDB106;
+        box-shadow: 6px 8px 12px -6px rgba(255, 187, 36, 0.34);
+        border-radius: 50px;
+        font-family: 'Proxima Nova', sans-serif;
+        font-style: italic;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 20px;
+        text-align: center;
+        color: #333331;
+        text-shadow: 4px 4px 4px rgba(241, 199, 19, 0.1);
+    }
+    .fb__btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 330px;
+        height: 56px;
+        background: linear-gradient(90deg, #FFBB24 0%, #FDB003 100%);
+        box-shadow: 6px 8px 12px -6px rgba(255, 187, 36, 0.34);
+        border-radius: 50px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        text-shadow: 4px 4px 4px rgba(241, 199, 19, 0.1);
+        border: none;
+        margin-top: 7px;
+    }
+    /* rent page */
+    .rent{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        box-sizing: border-box;
+        padding-left: 605px;
+        padding-right: 605px;
+    }
+    .rent__heading{
+        font-family: 'Days', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 120%;
+        text-align: center;
+        text-transform: uppercase;
+        color: #000000;
+        margin-bottom: 32px;
+        width: 676px;
+        height: 96px;
+        white-space: wrap;
+    }
+    .rent__wrapper-mob{
+        display: none;
+    }
+    .rent__wrapper{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 100px;
+    }
+    .rent__plus{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        /* margin-right: 40px; */
+        width: 335px;
+        height: 390px;
+        background: #FFFFFF;
+        border: 2px dashed #FDB106;
+        box-shadow: 0px 0px 30px #FDB106;
+        box-sizing: border-box;
+        padding-top: 33px;
+        padding-left: 25px;
+        padding-bottom: 44px;
+        padding-right: 25px;
+    }
+    .plusAdd{
+        margin-right: 40px;
+    }
+    .rent__plus ul{
+        list-style-type: circle;
+        color: #FDB003;
+        width: 285px;
+        height: 235px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .rent__plus ul li{
+        font-family: 'Proxima Nova', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 15px;
+        color: #333331;
+    }
+    .rent__minus{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 335px;
+        height: 405px;
+        background: #FFFFFF;
+        border: 2px dashed #FDB106;
+        box-shadow: 0px 0px 30px #FDB106;
+        box-sizing: border-box;
+        padding-top: 33px;
+        padding-left: 25px;
+        padding-bottom: 44px;
+        padding-right: 25px;
+    }
+    .rent__minus ul li{
+        font-family: 'Proxima Nova', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 15px;
+        color: #333331;
+    }
+    .rent__minus ul{
+        list-style-type: circle;
+        color: #FDB003;
+        width: 285px;
+        height: 235px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .rent__m{
+        width: 50px;
+        height: 50px;
+        margin: 0;
+        margin-bottom: 28px;
+    }
+    
+    /* best page */
+    .best{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-sizing: border-box;
+        padding-top: 22px;
+        padding-left: 400px;
+        padding-right: 400px;
+        padding-bottom: 35px;
+        background: #333331;
+        border: none;
+        border-bottom: 21px solid #FDB106;;
+    }
+    .best__heading{
+        font-family: 'Days', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 120%;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-bottom: 35px;
+        white-space: nowrap;
+    }
+    .best__wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 72px;
+    }
+    .best__one{
+        background: #FFFFFF;
+        box-shadow: 0px 0px 30px #FDB106;
+        border-radius: 40px;
+        width: 480px;
+        height: 208px;
+        padding-top: 26px;
+        padding-left: 50px;
+        padding-bottom: 22px;
+        box-sizing: border-box;
+        margin-right: 41px;
+    }
+    .best__block{
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .icon1{
+        width: 30px;
+        height: 30px;
+        margin-right: 50px;
+    }
+    .icon2{
+        width: 30px;
+        height: 30px;
+        margin-right: 50px;
+    }
+    .icon3{
+        width: 40px;
+        height: 20px;
+        margin-right: 39px;
+    }
+    .icon4{
+        width: 32px;
+        height: 30px;
+        margin-right: 47px;
+    }
+    .best__txt{
+        font-family: 'Proxima Nova', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 20px;
+        color: #000000;
+        opacity: 0.66;
+    }
+    .best__form{
+        width: 303px;
+        height: 173px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .best__inp{
+        background: #FFFFFF;
+        width: 303px;
+        height: 45px;
+        border: 2px solid #FDB106;
+        box-shadow: 6px 8px 12px -6px rgba(255, 187, 36, 0.34);
+        border-radius: 50px;
+        margin-bottom: 10px;
+        font-family: 'Proxima Nova', sans-serif;
+        font-style: italic;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 20px;
+        text-align: center;
+        color: #333331;
+        /* opacity: 0.38; */
+        text-shadow: 4px 4px 4px rgba(241, 199, 19, 0.1);
+    }
+    .best__btn{
+        background: linear-gradient(90deg, #FFBB24 0%, #FDB003 100%);
+        box-shadow: 6px 8px 12px -6px rgba(255, 187, 36, 0.34);
+        border-radius: 50px;
+        width: 303px;
+        height: 56px;
+        font-family: 'Proxima Nova', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        text-shadow: 4px 4px 4px rgba(241, 199, 19, 0.1);
+        border: none;
+        cursor: pointer;
+    }
+    .best__info{
+        height: 36px;
+        display: flex;
+        justify-content: space-between;
+        width: 480px;
+        align-items: center;
+    }
+    .info__mobile{
+        display: none;
+    }
+    .info__small{
+        font-family: 'Proxima Nova', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 18px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        text-shadow: 0px 0px 10px #FFB000;
+    }
+    /* footer page */
+    footer{
+        width: 100%;
+        height: 979px;
+        padding: 0;
+        padding: 100px 50px;
+        box-sizing: border-box;
+        background: #333331;
+    }
+    .footer__txt3-m{
+        display: none;
+    }
+    .footer__heading{
+        display: none;
+    }
+    .footer__wrapper{
+        display: flex;
+        align-items: center;
+        margin-bottom: 200px;
+    }
+    .footer__cars1{
+        display: flex;
+    }
+    .footer__cars2{
+        display: flex;
+    }
+    .cars__block1{
+        display: flex;
+        margin-right: 50px;
+    }
+    .cars__block2{
+        display: flex;
+        margin-right: 50px;
+    }
+    .cars__block3{
+        display: flex;
+        margin-right: 50px;
+    }
+    .ul__block{
+        text-decoration: none;
+        list-style: none;
+    }
+    .ul__block li{
+        font-family: 'Proxima Nova', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+        color: #FFFFFF;
+        white-space: nowrap;
+    }
+    .footer__info{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin-bottom: 27px;
+    }
+    .footer__txt{
+        font-family: 'Proxima Nova', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        color: #FFFFFF;
+        margin-right: 187px;
+        text-align: left;
+    }
+    .footer__txt2{
+        font-family: 'Proxima Nova', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #FFFFFF;
+        text-align: left;
+    }
+    .footer__txt3{
+        font-family: 'Proxima Nova', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #FFFFFF;
+        text-align: left;
+        white-space: wrap;
+        word-wrap: break-word;
+        overflow-x: hidden;
+    }
+}
+@media (min-width:768px) and (max-width:1200px) {
+    .plusAdd{
+        margin: 0;
     }
     .header{
         width: 100%;
         height: 60px;
-        padding-top: 8px;
+        padding-top: 15px;
         padding-left: 20px;
         padding-right: 20px;
-        padding-bottom: 4px;
+        padding-bottom: 15px;
         box-sizing: border-box;
     }
     .header__logo img{
-        width: 94px;
-        height: 12px;
+        width: 225px;
+        height: auto;
         margin: 0;
         margin-right: 13px;
     }
@@ -1371,7 +2607,7 @@ footer{
         display: block;
         width: 28px;
         height: 19px;
-        margin-bottom: 26px;
+        margin: 0;
     }
     .menu-m{
         display: none;
@@ -1401,8 +2637,8 @@ footer{
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 50px;
+        padding-right: 50px;
         padding-top: 22px;
         padding-bottom: 40px;
         box-sizing: border-box;
@@ -1417,18 +2653,18 @@ footer{
         margin: 0;
     }
     .car__text{
-        width: 299px;
+        width: 600px;
         height: auto;
         font-family: 'Days', sans-serif;
         font-style: normal;
         font-weight: 400;
-        font-size: 26px;
+        font-size: 30px;
         line-height: 30px;
         text-align: center;
         text-transform: uppercase;
         color: #FFFFFF;
         margin: 0;
-        margin-bottom: 38px;
+        margin-bottom: 30px;
         border: none;
         white-space: wrap;
     }
@@ -1449,15 +2685,15 @@ footer{
         font-family: 'Days', sans-serif;
         font-style: normal;
         font-weight: 400;
-        font-size: 26px;
+        font-size: 30px;
         line-height: 30px;
         text-align: center;
         text-transform: uppercase;
         color: #FDB106;
         margin: 0;
-        width: 299px;
+        width: 350px;
         height: auto;
-        margin-bottom: 14px;
+        margin-bottom: 20px;
         
     }
     .title__price{
@@ -1474,25 +2710,14 @@ footer{
         color: white;
         margin: 0;
     }
-    .text__day{
-        font-family: 'Days';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 26px;
-        line-height: 30px;
-        text-align: center;
-        text-transform: uppercase;
-        color: #FDB106;
-        margin: 0;
-    }
     .swiper{
         padding: 0;
-        width: 360px;
+        width: 550px;
         margin-bottom: 2px;
     }
     .swiper-slide img{
-        width: 235px;
-        height: 106px;
+        width: 350px;
+        height: 160px;
     }
     .swiper-button-next{
         margin-left: 8px;
@@ -1512,13 +2737,13 @@ footer{
         z-index: 2;
     }
     .ellips{
-        width: 350px;
-        height: 350px;
+        width: 450px;
+        height: 450px;
         border-radius: 50%;
         border: none;
         position: absolute;
         left: -200px;
-        top: 150px;
+        top: 70px;
         background: #FDB106;
         z-index: 1;
     }
@@ -1650,8 +2875,8 @@ footer{
         margin: 0;
         box-sizing: border-box;
         padding-top: 53px;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 50px;
+        padding-right: 50px;
         box-sizing: border-box;
     }
     .taxi__title{
@@ -1665,14 +2890,14 @@ footer{
         font-family: 'Days';
         font-style: normal;
         font-weight: 400;
-        font-size: 26px;
+        font-size: 30px;
         line-height: 30px;
         text-align: center;
         text-transform: uppercase;
         color: #000000;
         margin: 0;
         margin-bottom: 14px;
-        width: 218px;
+        width: 350px;
         height: 60px;
         white-space: nowrap;
     }
@@ -1687,11 +2912,11 @@ footer{
     .taxi__eco{
         padding-top: 15px;
         padding-bottom: 15px;
-        width: 103px;
+        width: 200px;
         font-family: 'Proxima Nova';
         font-style: normal;
         font-weight: 700;
-        font-size: 14px;
+        font-size: 16px;
         line-height: 25px;
         text-align: center;
         text-transform: uppercase;
@@ -1701,13 +2926,13 @@ footer{
         margin-right: 13px;
     }
     .taxi__com{
-        width: 103px;
+        width: 200px;
         padding-top: 15px;
         padding-bottom: 15px;
         font-family: 'Proxima Nova';
         font-style: normal;
         font-weight: 700;
-        font-size: 14px;
+        font-size: 16px;
         line-height: 25px;
         text-align: center;
         text-transform: uppercase;
@@ -1717,13 +2942,13 @@ footer{
         margin-right: 13px;
     }
     .taxi__plus{
-        width: 103px;
+        width: 200px;
         padding-top: 15px;
         padding-bottom: 15px;
         font-family: 'Proxima Nova', sans-serif;
         font-style: normal;
         font-weight: 700;
-        font-size: 14px;
+        font-size: 16px;
         line-height: 25px;
         text-align: center;
         text-transform: uppercase;
@@ -1735,12 +2960,12 @@ footer{
         font-family: 'Proxima Nova', sans-serif;
         font-style: normal;
         font-weight: 800;
-        font-size: 26px;
+        font-size: 30px;
         line-height: 25px;
         text-align: center;
         white-space: nowrap;
         margin: 0;
-        margin-bottom: 30px;
+        margin-bottom: 40px;
     }
     .taxi__small span{
         text-transform: uppercase;
@@ -1758,116 +2983,149 @@ footer{
         align-items: center;
         flex-direction: column;
         box-sizing: border-box;
-        padding-top: 23px;
-        padding-bottom: 34px;
-        padding-left: 8px;
-        padding-right: 8px;
+        padding-top: 31px;
+        padding-bottom: 37px;
+        padding-left: 21px;
+        padding-right: 21px;
         background: #FFFFFF;
         box-shadow: 0px 0px 30px #FDB106;
         border-radius: 40px;
-        width: 335px;
-        height: 459px;
+        width: 479px;
+        height: 637px;
         margin: 0;
-        margin-bottom: 16px;
+        margin-bottom: 40px;
     }
+    
     .taxi__card2{
         display: flex;
         align-items: center;
         flex-direction: column;
         box-sizing: border-box;
-        padding-top: 23px;
-        padding-bottom: 34px;
-        padding-left: 8px;
-        padding-right: 8px;
+        padding-top: 31px;
+        padding-bottom: 37px;
+        padding-left: 21px;
+        padding-right: 21px;
         background: #FFFFFF;
         box-shadow: 0px 0px 30px #FDB106;
         border-radius: 40px;
-        width: 335px;
-        height: 459px;
+        width: 479px;
+        height: 637px;
         margin: 0;
-        margin-bottom: 16px;
+        margin-bottom: 40px;
     }
     .taxi__card3{
         display: flex;
         align-items: center;
         flex-direction: column;
         box-sizing: border-box;
-        padding-top: 23px;
-        padding-bottom: 34px;
-        padding-left: 8px;
-        padding-right: 8px;
+        padding-top: 31px;
+        padding-bottom: 37px;
+        padding-left: 21px;
+        padding-right: 21px;
         background: #FFFFFF;
         box-shadow: 0px 0px 30px #FDB106;
         border-radius: 40px;
-        width: 335px;
-        height: 459px;
+        width: 479px;
+        height: 637px;
         margin: 0;
-        margin-bottom: 16px;
+        margin-bottom: 40px;
     }
+   
+    .taxi__card3:hover{
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
+    }
+    .taxi__card2:hover{
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
+    }
+    .taxi__card:hover{
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
+    }
+    .taxi__card3, .taxi__taxi{
+        /* width: 432px; */
+        white-space: wrap;
+    }
+    
     .taxi__text{
-        font-family: 'Days';
+        font-family: 'Days', sans-serif;
         font-style: normal;
         font-weight: 400;
-        font-size: 26px;
-        line-height: 30px;
-        margin-bottom: 5px;
+        font-size: 40px;
+        line-height: 120%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        text-transform: uppercase;
+        color: #333331;
+        margin-bottom: 13px;
     }
-    .taxi__txt{
+    .taxi__text span{
+        display: block;
+    }
+    .taxi__card2 .taxi__txt{
         font-family: 'Proxima Nova', sans-serif;
         font-style: normal;
         font-weight: 700;
-        font-size: 14px;
-        line-height: 25px;
+        font-size: 36px;
+        line-height: 36px;
+        display: flex;
+        align-items: center;
         text-align: center;
-        text-transform: lowercase;
         color: #FDB106;
-        margin: 0;
-        margin-bottom: 32px;
-    }
-    .taxi__card2  .taxi__txt{
-        font-family: 'Proxima Nova', sans-serif;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 25px;
-        text-align: center;
-        text-transform: lowercase;
-        color: #FDB106;
-        margin: 0;
-        margin-bottom: 6px;
+        margin-bottom: 8px;
     }
     .taxi__card3 .taxi__txt{
         font-family: 'Proxima Nova', sans-serif;
         font-style: normal;
         font-weight: 700;
-        font-size: 14px;
-        line-height: 25px;
+        font-size: 36px;
+        line-height: 36px;
+        display: flex;
+        align-items: center;
         text-align: center;
-        text-transform: lowercase;
         color: #FDB106;
-        margin: 0;
-        margin-bottom: 23px;
+        margin-bottom: 8px;
+    }
+    .taxi__txt{
+        font-family: 'Proxima Nova', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 36px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #FDB106;
+        margin-bottom: 56px;
     }
     .taxi__img{
-        width: 318px;
-        height: 169px;
-        margin: 0;
-        margin-bottom: 12px;
+        width: 437px;
+        height: 232px;
+        margin-bottom: 25px;
     }
     .taxi__sm{
-        font-family: 'Days', sans-serif;
         font-style: normal;
         font-weight: 400;
-        font-size: 26px;
-        line-height: 30px;
-        margin: 0;
+        font-size: 30px;
+        line-height: 32px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        text-transform: uppercase;
+        color: #000000;
+        font-family: 'Days', sans-serif;
+        margin-bottom: 1px;
     }
     .taxi__txt2{
-        font-family: 'Days', sans-serif;
+        font-family: 'Proxima Nova', sans-serif;
         font-style: normal;
-        font-weight: 400;
-        font-size: 26px;
-        margin-bottom: 14px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 36px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #FDB106;
+        margin-bottom: 10px;
     }
     .taxi__btn{
         cursor: pointer;
@@ -1875,18 +3133,19 @@ footer{
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-top: 13px;
-        padding-bottom: 12px;
-        padding-left: 28px;
-        padding-right: 28px;
+        padding-top: 17px;
+        padding-bottom: 16px;
+        padding-left: 79px;
+        padding-right: 79px;
         background: linear-gradient(90deg, #FFBB24 0%, #FDB003 100%);
         box-shadow: 6px 8px 12px -6px rgba(255, 187, 36, 0.34);
         border-radius: 50px;
         border: none;
         color: white;
         font-weight: 700;
-        font-size: 18px;
+        font-size: 20px;
     }
+    .ou
     .our__taxi{
         display: block;
         font-family: 'Proxima Nova', sans-serif;
@@ -1904,22 +3163,22 @@ footer{
         width: 100%;
         box-sizing: border-box;
         padding: 0;
-        padding-top: 50px;
+        padding-top: 20px;
         margin: 0;
     }
     .income__heading{
         font-family: 'Days', sans-serif;
-        width: 277px;
+        width: 350px;
         height: 60px;
         font-family: 'Days';
         font-style: normal;
         font-weight: 400;
-        font-size: 26px;
+        font-size: 30px;
         line-height: 30px;
         text-align: center;
         text-transform: uppercase;
         margin: 0;
-        margin-bottom: 16px;
+        margin-bottom: 20px;
     }
     .income__city{
         display: flex;
@@ -1992,10 +3251,10 @@ footer{
     }
     .income__btn-hidden{
         display: block;
-        padding-top: 13px;
-        padding-bottom: 12px;
-        padding-right: 28px;
-        padding-left: 28px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-right: 80px;
+        padding-left: 80px;
         border: none;
         background: linear-gradient(90deg, #FFBB24 0%, #FDB003 100%);
         box-shadow: 6px 8px 12px -6px rgba(255, 187, 36, 0.34);
@@ -2003,13 +3262,14 @@ footer{
         font-family: 'Proxima Nova';
         font-style: normal;
         font-weight: 700;
-        font-size: 18px;
+        font-size: 20px;
         line-height: 22px;
         text-align: center;
         text-transform: uppercase;
         color: #FFFFFF;
         text-shadow: 4px 4px 4px rgba(241, 199, 19, 0.1);
         margin-bottom: 50px;
+        margin-top: 10px;
     }
     .form-mob{
         display: flex;
@@ -2063,11 +3323,12 @@ footer{
         color: #000000;
         white-space: wrap;
         font-weight: 400;
-        font-size: 26px;
+        font-size: 30px;
         line-height: 30px;
         margin: 0;
-        margin-bottom: 15px;
-        width: 336px;
+        margin-bottom: 35px;
+        white-space: nowrap;
+        width: 400px;
         height: 60px;
     }
     .rent__wrapper{
@@ -2274,10 +3535,7 @@ footer{
     footer{
         width: 100%;
         box-sizing: border-box;
-        padding: 0;
-        padding-top: 31px;
-        padding-left: 36px;
-        padding-bottom: 33px;
+        padding: 50px;
         align-items: center;
         text-align: center;
         display: flex;
@@ -2289,12 +3547,11 @@ footer{
         height: auto;
     }
     .footer__heading{
-
         display: block;
         font-family: 'Proxima Nova';
         font-style: normal;
         font-weight: 700;
-        font-size: 15px;
+        font-size: 22px;
         line-height: 15px;
         color: #FFFFFF;
         text-align: center;
@@ -2311,26 +3568,29 @@ footer{
     }
     .footer__cars1{
         display: flex;
-        flex-direction: column;
+        /* flex-direction: column; */
         text-align: left;
         margin-right: 30px;
     }
     .footer__cars2{
         display: flex;
-        flex-direction: column;
+        /* flex-direction: column; */
         text-align: left;
     }
     .cars__block1{
         display: flex;
         margin: 0;
+        margin-right: 30px;
     }
     .cars__block2{
         display: flex;
         margin: 0;
+        margin-right: 30px;
     }
     .cars__block3{
         display: flex;
         margin: 0;
+        margin-right: 30px;
     }
     .ul__block{
         text-decoration: none;
@@ -2340,7 +3600,7 @@ footer{
         font-family: 'Proxima Nova', sans-serif;
         font-style: normal;
         font-weight: 400;
-        font-size: 10px;
+        font-size: 11px;
         line-height: 20px;
         color: #FFFFFF;
         white-space: nowrap;
@@ -2400,1084 +3660,3 @@ footer{
     }
 
 }
-
-
-
-
-/* для слайдера в маленьких экрана */
-@media (min-width:320px) and (max-width:375px) {
-    .plusAdd{
-        margin: 0;
-    }
-    .container{
-        width: 100%;
-        box-sizing: border-box;
-        margin: 0 auto;
-
-    }
-    .header{
-        width: 100%;
-        height: 60px;
-        padding-top: 6px;
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-bottom: 4px;
-        box-sizing: border-box;
-    }
-    .header__logo img{
-        width: 80px;
-        height: 12px;
-        margin: 0;
-        margin-right: 9px;
-    }
-    .header__logo {
-        margin: 0;
-        margin-right: 9px;
-    }
-    .header__navigation{
-        display: none;
-        flex-direction: column;
-    }
-    .call{
-        padding-left: 15px;
-        margin: 0;
-    }
-    .call__phone{
-        font-weight: 600;
-        font-size: 10px;
-        line-height: 10px;
-    }
-    .call__phone-mob{
-        display: block;
-        font-weight: 600;
-        color: white;
-        font-size: 10px;
-        line-height: 10px;
-        font-family: 'Proxima Nova', sans-serif;
-    }
-    .call__me{
-        font-family: 'Proxima Nova', sans-serif;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 10px;
-        line-height: 10px;
-        display: flex;
-        align-items: center;
-        color: #FDB106;
-        margin: 0;
-        margin-right: 10px;
-        margin-top: 5px;
-    }
-    .burger{
-        display: block;
-        width: 20px;
-        height: 15px;
-        margin-bottom: 20px;
-    }
-    .menu-m{
-        display: none;
-    }
-    .content{
-        width: 100%;
-        background-image: url(/img/mb-bg.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-top: 12px;
-        padding-bottom: 30px;
-        box-sizing: border-box;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: relative;
-        margin: 0;
-    }
-    .content__car{
-        display: block;
-        margin: 0;
-    }
-    .car__text{
-        width: 299px;
-        height: auto;
-        font-family: 'Days', sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 26px;
-        line-height: 30px;
-        text-align: center;
-        text-transform: uppercase;
-        color: #FFFFFF;
-        margin: 0;
-        margin-bottom: 38px;
-        border: none;
-        white-space: wrap;
-    }
-    .car__img{
-        display: none;
-    }
-    .content__price{
-        display: none;
-        margin: 0;
-    }
-    .content__price-mobile{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 0;
-    }
-    .price__title{
-        font-family: 'Days', sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 26px;
-        line-height: 30px;
-        text-align: center;
-        text-transform: uppercase;
-        color: #FDB106;
-        margin: 0;
-        width: 299px;
-        height: auto;
-        margin-bottom: 10px;
-        
-    }
-    .title__price{
-        display: block;
-    }
-    .text__day{
-        font-family: 'Days';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 26px;
-        line-height: 30px;
-        text-align: center;
-        text-transform: uppercase;
-        color: white;
-        margin: 0;
-        margin-bottom: 6px;
-    }
-    .text__day{
-        font-family: 'Days';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 26px;
-        line-height: 30px;
-        text-align: center;
-        text-transform: uppercase;
-        color: #FDB106;
-        margin: 0;
-    }
-    .ellips{
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
-        border: none;
-        position: absolute;
-        left: -70px;
-        top: 210.31px;
-        background: #FDB106;
-        z-index: 1;
-    }
-    .content__timing{
-        z-index: 3;
-        margin: 0;
-        margin-bottom: 23px;
-    }
-    .content__wrapper{
-        margin: 0;
-    }
-    .content__strong{
-        font-family: 'Proxima Nova', sans-serif;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 15px;
-        text-align: center;
-        margin: 0;
-    }
-    .content__btn{
-        display: none;
-    }
-    .content__btn-mobile{
-        display: block;
-        padding-left: 25px;
-        padding-right: 25px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        font-family: 'Proxima Nova';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 13px;
-        line-height: 22px;
-        text-align: center;
-        text-transform: uppercase;
-        color: #FFFFFF;
-        text-shadow: 4px 4px 4px rgba(241, 199, 19, 0.1);
-        background: linear-gradient(90deg, #FFBB24 0%, #FDB003 100%);
-        box-shadow: 6px 8px 12px -6px rgba(255, 187, 36, 0.34);
-        border-radius: 50px;
-        border: none;
-        margin: 0;
-    }
-    .info{
-        margin: 0;
-        padding-top: 40px;
-        padding-left: 15px;
-        padding-right: 15px;
-        width: 100%;
-        box-sizing: border-box;
-    }
-    .info__heading{
-        width: 299px;
-        font-family: 'Days', sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 26px;
-        line-height: 30px;
-        text-align: center;
-        text-transform: uppercase;
-        color: #333331;
-        margin: 0;
-        margin-bottom: 18px;
-    }
-  
-    .info__one{
-        display: flex;
-        flex-direction: column;
-        margin: 0;
-    }
-    .info__two{
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-    }
-    .info__card{
-        margin: 0;
-        margin-bottom: 9px;
-        position: relative;
-    }
-    .info__card2{
-        margin: 0;
-        margin-bottom: 9px;
-        position: relative;
-
-    }
-    .info__card3{
-        margin: 0;
-        position: relative;
-    }
-    .info__car{
-        margin: 0;
-        margin-bottom: 9px;
-    }
-    .info__card2{
-        margin: 0;
-        margin-bottom: 9px;
-    }
-    .info__img{
-        width: 50px;
-        height: 50px;
-        margin-right: 30px;
-    }
-    .elps{
-        width: 50px;
-        height: 50px;
-        left: 55px;
-        top: 0px;
-        background: linear-gradient(90deg, #FFBB24 0%, #FDB003 100%);
-    }
-    .info__text{
-        font-family: 'Proxima Nova', sans-serif;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 10px;
-        line-height: 12px;
-        display: flex;
-        align-items: center;
-        text-transform: uppercase;
-        color: #000000;
-        white-space: nowrap;
-    }
-    .info__text br{
-        display: none;
-    }
-    .taxi{
-        width: 100%;
-        margin: 0;
-        box-sizing: border-box;
-        padding-top: 43px;
-        padding-left: 10px;
-        padding-right: 10px;
-        box-sizing: border-box;
-    }
-    .taxi__title{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 0;
-        margin-bottom: 30px;
-    }
-    .taxi__heading{
-        font-family: 'Days', sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 26px;
-        line-height: 30px;
-        text-align: center;
-        text-transform: uppercase;
-        color: #000000;
-        margin: 0;
-        margin-bottom: 14px;
-        width: 218px;
-        height: 60px;
-        white-space: wrap;
-    }
-    .taxi__btn-wr{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .taxi__eco{
-        width: 93px;
-        height: 30px;
-        font-family: 'Proxima Nova';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 10px;
-        line-height: 12px;
-        text-align: center;
-        text-transform: uppercase;
-        color: #FFFFFF;
-        text-shadow: 4px 4px 4px rgba(241, 199, 19, 0.1);
-        margin: 0;
-        margin-right: 7px;
-    }
-    .taxi__com{
-        width: 93px;
-        height: 30px;
-        font-family: 'Proxima Nova';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 10px;
-        line-height: 12px;
-        text-align: center;
-        text-transform: uppercase;
-        color: #FFFFFF;
-        text-shadow: 4px 4px 4px rgba(241, 199, 19, 0.1);
-        margin: 0;
-        margin-right: 7px;
-    }
-    .taxi__plus{
-        width: 93px;
-        height: 30px;
-        font-family: 'Proxima Nova', sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 10px;
-        line-height: 12px;
-        text-align: center;
-        text-transform: uppercase;
-        color: #FFFFFF;
-        text-shadow: 4px 4px 4px rgba(241, 199, 19, 0.1);
-        margin: 0;
-    }
-    .taxi__small{
-        font-family: 'Proxima Nova', sans-serif;
-        font-style: normal;
-        font-weight: 800;
-        font-size: 20px;
-        line-height: 18px;
-        text-align: center;
-        white-space: nowrap;
-        margin: 0;
-        margin-bottom: 20px;
-    }
-    .taxi__small span{
-        text-transform: uppercase;
-    }
-    .taxi__two{
-        display: none;
-    }
-    .taxi__one{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 0;
-    }
-    .taxi__card{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        box-sizing: border-box;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        padding-left: 8px;
-        padding-right: 8px;
-        background: #FFFFFF;
-        box-shadow: 0px 0px 10px #FDB106;
-        border-radius: 40px;
-        width: 300px;
-        height: 400px;
-        margin: 0;
-        margin-bottom: 20px;
-    }
-    .taxi__card2{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        box-sizing: border-box;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        padding-left: 8px;
-        padding-right: 8px;
-        background: #FFFFFF;
-        box-shadow: 0px 0px 10px #FDB106;
-        border-radius: 40px;
-        width: 300px;
-        height: 400px;
-        margin: 0;
-        margin-bottom: 20px;
-    }
-    .taxi__card3{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        box-sizing: border-box;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        padding-left: 8px;
-        padding-right: 8px;
-        background: #FFFFFF;
-        box-shadow: 0px 0px 10px #FDB106;
-        border-radius: 40px;
-        width: 300px;
-        height: 400px;
-        margin: 0;
-        margin-bottom: 20px;
-    }
-    .taxi__text{
-        font-family: 'Days',sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 30px;
-        margin-bottom: 5px;
-    }
-    .taxi__txt{
-        font-family: 'Proxima Nova', sans-serif;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 15px;
-        line-height: 25px;
-        text-align: center;
-        text-transform: lowercase;
-        color: #FDB106;
-        margin: 0;
-        margin-bottom: 20px;
-    }
-    .taxi__card2  .taxi__txt{
-        font-family: 'Proxima Nova', sans-serif;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 15px;
-        line-height: 25px;
-        text-align: center;
-        text-transform: lowercase;
-        color: #FDB106;
-        margin: 0;
-        margin-bottom: 6px;
-    }
-    .taxi__card3 .taxi__txt{
-        font-family: 'Proxima Nova', sans-serif;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 15px;
-        line-height: 25px;
-        text-align: center;
-        text-transform: lowercase;
-        color: #FDB106;
-        margin: 0;
-        margin-bottom: 13px;
-    }
-    .taxi__img{
-        width: 280px;
-        height: 149px;
-        margin: 0;
-        margin-bottom: 8px;
-    }
-    .taxi__sm{
-        font-family: 'Days', sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 30px;
-        margin: 0;
-    }
-    .taxi__txt2{
-        font-family: 'Days', sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 20px;
-        margin-bottom: 20px;
-    }
-    .taxi__btn{
-        cursor: pointer;
-        font-family: 'Proxima Nova', sans-serif;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-top: 8px;
-        padding-bottom: 8px;
-        padding-left: 20px;
-        padding-right: 20px;
-        background: linear-gradient(90deg, #FFBB24 0%, #FDB003 100%);
-        box-shadow: 6px 8px 12px -6px rgba(255, 187, 36, 0.34);
-        border-radius: 50px;
-        border: none;
-        color: white;
-        font-weight: 700;
-        font-size: 14px;
-        margin: 0;
-    }
-    .our__taxi{
-        display: block;
-        font-family: 'Proxima Nova', sans-serif;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 18px;
-        text-align: center;
-        text-decoration-line: underline;
-        text-transform: uppercase;
-        color: #FDB106;
-        margin-top: 30px;
-    }
-    .income{
-        width: 100%;
-        box-sizing: border-box;
-        padding: 0;
-        padding-top: 30px;
-        margin: 0;
-    }
-    .income__heading{
-        font-family: 'Days', sans-serif;
-        width: 277px;
-        height: 60px;
-        font-family: 'Days';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 26px;
-        line-height: 30px;
-        text-align: center;
-        text-transform: uppercase;
-        margin: 0;
-        margin-bottom: 10px;
-    }
-    .income__city{
-        display: flex;
-        flex-direction: column;
-        margin: 0;
-    }
-    .income__moscow{
-        display: flex;
-        margin: 0;
-        margin-left: -20px;
-        margin-bottom: 17px;
-    }
-    .income__moscow2{
-        display: flex;
-        margin: 0;
-        margin-left: -20px;
-        margin-bottom: 16px;
-    }
-    .income__moscow3{
-        display: flex;
-        margin: 0;
-        margin-left: -20px;
-        margin-bottom: 18px;
-    }
-    .income__moscow img{
-        width: 50px;
-        height: 50px;
-        margin-right: 20px;
-    }
-    .income__moscow2 img{
-        width: 50px;
-        height: 50px;
-        margin-right: 20px;
-    }
-    .income__moscow3 img{
-        width: 50px;
-        height: 50px;
-        margin-right: 20px;
-    }
-    .income__small{
-        font-family: 'Proxima Nova', sans-serif;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 10px;
-        line-height: 15px;
-        text-transform: uppercase;
-        white-space: nowrap;
-        color: #000000;
-    }
-    .income__txt{
-        font-family: 'Proxima Nova', sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 10px;
-        line-height: 15px;
-        color: #000000;
-        white-space: nowrap;
-        margin-top: 3px;
-    }
-    .in__span{
-        font-family: 'Proxima Nova', sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 10px;
-        line-height: 15px;
-        color: #FDB106;
-        display: block;
-    }
-    .income__btn-hidden{
-        display: block;
-        padding-top: 13px;
-        padding-bottom: 12px;
-        padding-right: 28px;
-        padding-left: 28px;
-        border: none;
-        background: linear-gradient(90deg, #FFBB24 0%, #FDB003 100%);
-        box-shadow: 6px 8px 12px -6px rgba(255, 187, 36, 0.34);
-        border-radius: 50px;
-        font-family: 'Proxima Nova', sans-serif;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 15px;
-        line-height: 22px;
-        text-align: center;
-        text-transform: uppercase;
-        color: #FFFFFF;
-        text-shadow: 4px 4px 4px rgba(241, 199, 19, 0.1);
-        margin-bottom: 30px;
-    }
-    .form-mob{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        width: 100%;
-        background-image: none;
-    }
-    .form-txt{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        text-align: center;
-        background: linear-gradient(90deg, #FFBB24 0%, #FDB003 100%);
-        font-family: 'Days', sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 26px;
-        line-height: 30px;
-        text-align: center;
-        text-transform: uppercase;
-        height: 50px;
-        margin-bottom: 15px;
-    }
-    .feed-back{
-        display: none;
-    }
-    .fb__inp{
-        width: 280px;
-        height: 40px;
-    }
-    .fb__btn{
-        width: 280px;
-        height: 40px;
-        font-size: 14px;
-    }
-    /* rent page */
-    .rent{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        box-sizing: border-box;
-        padding: 0;
-        padding-top: 50px;
-        padding-bottom: 50px;
-        align-items: center;
-        margin: 0;
-
-    }
-    .rent__heading{
-        font-family: 'Days', sans-serif;
-        font-style: normal;
-        font-weight: bold;
-        line-height: 120%;
-        text-align: center;
-        text-transform: uppercase;
-        color: #000000;
-        height: 96px;
-        white-space: wrap;
-        font-weight: 400;
-        font-size: 22px;
-        line-height: 30px;
-        margin: 0;
-        margin-bottom: 15px;
-        width: 300px;
-    }
-    .rent__wrapper{
-        display: none;
-        margin: 0;
-    }
-    .rent__wrapper-mob{
-        display: flex;
-        flex-direction: column;
-        margin: 0;
-    }
-    .rent__plus{
-        box-sizing: border-box;
-        background: #FFFFFF;
-        border: 2px dashed #FDB106;
-        box-shadow: 0px 0px 30px #FDB106;
-        width: 300px;
-        height: 220px;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        padding-top: 20px;
-        padding-left: 15px;
-        padding-right: 5px;
-        padding-bottom: 13px;
-        box-sizing: border-box;
-        position: relative;
-        margin-bottom: 45px;
-    }
-    .rent__minus{
-        box-sizing: border-box;
-        background: #FFFFFF;
-        border: 2px dashed #FDB106;
-        box-shadow: 0px 0px 30px #FDB106;
-        width: 300px;
-        height: 200px;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        padding-top: 20px;
-        padding-left: 15px;
-        padding-right: 5px;
-        padding-bottom: 13px;
-        box-sizing: border-box;
-        position: relative;
-    }
-    .img-plus{
-        position: absolute;
-        width: 42.45px;
-        height: 42.45px;
-        left: 126px;
-        bottom: 200px;
-    }
-    .img-minus{
-        position: absolute;
-        width: 42.45px;
-        height: 42.45px;
-        left: 126px;
-        bottom: 180px;
-    }
-    .rent__minus ul{
-        list-style-type:circle ;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 265px;
-        height: 170px;
-        box-sizing: border-box;
-    }
-    .rent__plus ul{
-        list-style-type:circle ;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 265px;
-        height: 170px;
-        box-sizing: border-box;
-    }
-    .rent__plus ul li{
-        font-family: 'Proxima Nova', sans-serif;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 11px;
-        line-height: 15px;
-        color: #333331;
-        margin-bottom: 7px;
-    }
-    .rent__minus ul li{
-        font-family: 'Proxima Nova', sans-serif;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 11px;
-        line-height: 15px;
-        color: #333331;
-        margin-bottom: 7;
-    }
-    /* best page */
-    .best{
-        display: flex;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        padding-top: 22px;
-        padding-left: 36px;
-        padding-right: 36px;
-        padding-bottom: 29px;
-        box-sizing: border-box;
-    }
-    .best__heading{
-        font-family: 'Days', sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 26px;
-        line-height: 30px;
-        text-align: center;
-        text-transform: uppercase;
-        color: #FFFFFF;
-        width: 240px;
-        height: 90px;
-        white-space: wrap;
-    }
-    .best__wrapper{
-        margin: 0;
-        flex-direction: column;
-        align-items: center;
-    }
-    .best__one{
-        width: 303px;
-        height: 208px;
-        padding-top: 26px;
-        padding-left: 28px;
-        padding-bottom: 27px;
-        box-sizing: border-box;
-        margin: 0;
-        margin-bottom: 15px;
-    }
-    .best__block{
-        display: flex;
-    }
-    .best__one div:nth-child(4){
-        margin-top: 20px;
-        margin-bottom: 0;
-    }
-    .best__one div:nth-child(3){
-        margin-top: 15px;
-        margin-bottom: 0;
-    }
-    .icon1{
-        width: 30px;
-        height: 30px;
-        margin-right: 22px;
-    }
-    .icon2{
-        width: 30px;
-        height: 30px;
-        margin-right: 22px;
-    }
-    .icon3{
-        width: 40px;
-        height: 20px;
-        margin-right: 11px;
-    }
-    .icon4{
-        width: 32px;
-        height: 30px;
-        margin-right: 19px;
-    }
-    .best__txt{
-        font-family: 'Proxima Nova', sans-serif;
-        font-style: normal;
-        color: #000000;
-        font-weight: 600;
-        font-size: 15px;
-        line-height: 17px;
-    }
-    .best__btn{
-        margin: 0;
-        margin-bottom: 37px;
-    }
-    .best__info{
-        display: flex;
-        justify-content: space-between;
-        margin: 0;
-        width: 290px;
-        height: auto;
-    }
-    .info__mobile{
-        display: flex;
-        flex-direction: column;
-        margin: 0;
-    }
-    .info__mobile small:nth-child(1){
-        margin-bottom: 7px;
-    }
-    .hidden{
-        display: none;
-    }
-    .hidden2{
-        display: none;
-    }
-    .info__small{
-        font-size: 12px;
-        margin: 0;
-    }
-    footer{
-        width: 100%;
-        box-sizing: border-box;
-        padding: 0;
-        padding-top: 21px;
-        padding-left: 26px;
-        padding-bottom: 23px;
-        align-items: center;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-    }
-    .footer{
-        padding: 0;
-        margin: 0;
-        height: auto;
-    }
-    .footer__heading{
-
-        display: block;
-        font-family: 'Proxima Nova';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 15px;
-        line-height: 15px;
-        color: #FFFFFF;
-        text-align: center;
-        white-space: nowrap;
-        margin-bottom: 15px;
-        margin-top: 31px;
-    }
-    .footer__wrapper{
-        display: flex;
-        align-items: center;
-        margin: 0;
-        padding: 0;
-        margin-bottom: 32px;
-    }
-    .footer__cars1{
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-        margin-right: 20px;
-    }
-    .footer__cars2{
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-    }
-    .cars__block1{
-        display: flex;
-        margin: 0;
-    }
-    .cars__block2{
-        display: flex;
-        margin: 0;
-    }
-    .cars__block3{
-        display: flex;
-        margin: 0;
-    }
-    .ul__block{
-        text-decoration: none;
-        list-style: none;
-    }
-    .ul__block li{
-        font-family: 'Proxima Nova', sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 8px;
-        line-height: 15px;
-        color: #FFFFFF;
-        white-space: nowrap;
-    }
-    .footer__info{
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        margin-bottom: 6px;
-    }
-    .footer__txt{
-        font-family: 'Proxima Nova', sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        color: #FFFFFF;
-        margin-right: 187px;
-        text-align: center;
-        font-weight: 400;
-        font-size: 10px;
-        line-height: 20px;
-        text-transform: uppercase;
-        white-space: nowrap;
-        margin: 0;
-    }
-    .footer__txt2{
-        font-family: 'Proxima Nova', sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 8px;
-        line-height: 15px;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        color: #FFFFFF;
-        text-align: center;
-        margin: 0;
-    }
-    .footer__txt3-m{
-        font-family: 'Proxima Nova', sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 8px;
-        line-height: 15px;
-        text-align: center;
-        color: white;
-        max-width: 335px;
-        width: 100%;
-        margin: 0;
-        height: auto;
-        white-space: nowrap;
-        margin-bottom: 33px;
-    }
-    .footer__txt3{
-        display: none;
-    }
-
-    .swiper{
-        width: 300px;
-    }
-    .swiper-slide img{
-        width: 200px;
-        height: 90px;
-    }
-    .swiper-button-next,
-    .swiper-button-prev{
-        width: 30px !important;
-        height: 30px !important;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 50%;
-        background-color: white;
-        border: none;
-        height: 40px;
-        margin: 0;
-        padding: 0;
-    }
-}
-@import url(style2.css);
